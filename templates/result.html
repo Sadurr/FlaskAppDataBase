@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for result in data %}
+    <p>{{result.name}} napisal {{result.text}}</p>
+{% else %}
+    <p>Brak wpisow</p>
+{% endfor %}
+{% endblock %}
